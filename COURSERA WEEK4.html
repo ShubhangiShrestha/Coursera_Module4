@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<button onclick="myFunction()">Click here to enter the name</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var person = prompt("Please enter your name", "");
+  var needle="J";
+  if (person.startsWith(needle) == true) {
+    document.getElementById("demo").innerHTML =
+    "Goodbye JSomeName";
+  }
+  else{
+   document.getElementById("demo").innerHTML="Hello SomeName";
+  }
+}
+</script>
+
+</body>
+</html>
+ 
